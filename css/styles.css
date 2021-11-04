@@ -222,7 +222,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button, .form-button {
+.hero-button,
+.form-button {
   padding: 10px 32px;
   min-height: 50px;
 
@@ -240,8 +241,10 @@ body {
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 }
-.hero-button, .form-button:hover,
-.hero-button, .form-button:focus {
+.hero-button,
+.form-button:hover,
+.hero-button,
+.form-button:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--hero-but-hover);
 }
@@ -300,7 +303,16 @@ body {
 .close-btn:focus {
   fill: var(--accent-color);
 }
-.form-box {padding-left: 40px;} 
+.form-box {
+  padding: 40px;
+}
+.form-text-title {margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: left;
+  color: var(--title-text-color);}
+
 input {
   padding: 11px;
   font-family: inherit;
@@ -310,6 +322,8 @@ label {
   flex-direction: column;
   margin-bottom: 10px;
 }
+/* .modal-input:focus-within {border-color: var(--accent-color);
+outline: none;} */
 /*Наши преимущества*/
 .list,
 .team,
