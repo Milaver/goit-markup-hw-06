@@ -47,6 +47,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+
+textarea {
+  cursor: pointer;
+}
 /* hover focus */
 .contacts-link:hover,
 .contacts-link:focus,
@@ -223,7 +228,8 @@ body {
   text-transform: uppercase;
 }
 .hero-button,
-.form-button {
+.form-button,
+.subscribe-button {
   padding: 10px 32px;
   min-height: 50px;
 
@@ -306,24 +312,31 @@ body {
 .form-box {
   padding: 40px;
 }
-.form-text-title {margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
-  text-align: left;
-  color: var(--title-text-color);}
-
-input {
-  padding: 11px;
-  font-family: inherit;
-}
-label {
+.modal-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-/* .modal-input:focus-within {border-color: var(--accent-color);
-outline: none;} */
+.modal-input {
+  padding: 11px 12px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 448px;
+}
+.form-text-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: left;
+  color: var(--title-text-color);
+}
+
+.modal-label.modal-input:focus-within {
+  border-color: var(--accent-color);
+  outline: none;
+  cursor: pointer;
+}
 /*Наши преимущества*/
 .list,
 .team,
@@ -732,7 +745,8 @@ outline: none;} */
   width: 206px;
   height: 80px;
 }
-.social-text-title {
+.social-text-title,
+.subscribe-text-title {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
@@ -753,4 +767,14 @@ outline: none;} */
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--accent-color);
+}
+.subscribe-input {
+  padding: 15px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: inherit;
+  color: var(--logo-bg-white-color);
+ 
 }
