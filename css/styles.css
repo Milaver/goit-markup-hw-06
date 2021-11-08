@@ -247,10 +247,8 @@ body {
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 }
-.hero-button,
-.form-button:hover,
-.hero-button,
-.form-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--hero-but-hover);
 }
@@ -932,6 +930,11 @@ fill: var(--accent-color);}  */
   height: 100%; */
   fill:var(--logo-bg-white-color);
   margin-left: 10px;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--logo-bg-white-color);
+  background-color: var(--hero-but-hover);
 }
 /* .subscribe-button-icon {
   position: relative;
