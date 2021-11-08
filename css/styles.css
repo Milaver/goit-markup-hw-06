@@ -438,13 +438,13 @@ fill: var(--accent-color);}  */
 }
 .modal-form-checkbox-label::before {
   display: block;
-    content: '';
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    cursor: pointer;
-    border: 1px solid var(--primary-text-color);
-    border-radius: 2px;
+  content: '';
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  cursor: pointer;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 2px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   border: none;
@@ -859,6 +859,7 @@ fill: var(--accent-color);}  */
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
+.social {margin-right: 93px;}
 .footer .social {
   display: block;
   width: 206px;
@@ -887,12 +888,70 @@ fill: var(--accent-color);}  */
 .footer .social-link:focus {
   background-color: var(--accent-color);
 }
+
+  .footer-form {
+    display: flex;
+    align-items: flex-end;
+
+  }
+/* .subscribe-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .subscribe-input {
-  padding: 15px;
+  padding: 15px 16px;
   width: 358px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: inherit;
   color: var(--logo-bg-white-color);
 }
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-input:focus {
+  outline-color: var(--accent-color);
+}
+.subscribe-input:not(:placeholder-shown):focus:invalid {
+  outline-color: #ff0000;
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+.icon-send {
+  /* width: 100%;
+  height: 100%; */
+  fill:var(--logo-bg-white-color);
+  margin-left: 10px;
+}
+/* .subscribe-button-icon {
+  position: relative;
+
+  padding-left: 29px;
+
+  text-align: start;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+} */
+/* .subscribe-button:after {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+} */
